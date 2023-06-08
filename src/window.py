@@ -188,7 +188,7 @@ def generate_password():
     acceptable_ascii_codes = get_admissible_ascii_codes()
 
     password = ""
-    while len(password) < user_input["number_of_digits"] - 1:
+    while len(password) < user_input["number_of_digits"]:
         init_1 = chaotic_map.next_point(init_1, map_pameters_1)
         init_2 = chaotic_map.next_point(init_2, map_pameters_2)
 
